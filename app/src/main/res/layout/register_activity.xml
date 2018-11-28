@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/space_box"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Kid's Profile"
+        android:textSize="50px"
+        android:layout_marginTop="10px"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ImageView
+        android:layout_marginTop="50px"
+        android:id="@+id/imageView"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/kid" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_text">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lltxtv">
+
+    <TextView
+        android:id="@+id/tvkindername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kindergarten Name"
+        android:layout_marginBottom="@dimen/space_text"
+        />
+
+
+        <TextView
+            android:id="@+id/tvkidname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kid Name"
+            android:layout_marginBottom="@dimen/space_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvparentname"
+            android:text="Parent Name"
+            android:layout_marginBottom="@dimen/space_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvemail"
+            android:text="Email"
+            android:layout_marginBottom="@dimen/space_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvbirthday"
+            android:text="Birthday"
+            android:layout_marginBottom="@dimen/space_text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/lltxtv"
+        android:layout_marginLeft="@dimen/space_text"
+
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:id="@+id/etkindername"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:layout_marginTop="@dimen/space_box"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:layout_marginTop="@dimen/space_box"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:layout_marginTop="@dimen/space_box"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:layout_marginTop="@dimen/space_box"
+            />
+    </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/space_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kid's Interests"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbsport"
+                android:text="Sport"/>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbpuzzel"
+                android:layout_toEndOf="@id/cbsport"
+                android:layout_marginLeft="8px"
+                android:text="Puzzel"/>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbboard"
+                android:layout_toEndOf="@id/cbpuzzel"
+                android:text="Board Games"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbbooks"
+                android:layout_below="@id/cbpuzzel"
+                android:text="Books"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbart"
+                android:layout_toEndOf="@id/cbbooks"
+                android:layout_below="@id/cbsport"
+                android:text="Art"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbtoy"
+                android:layout_toEndOf="@id/cbart"
+                android:layout_below="@id/cbboard"
+                android:layout_marginLeft="45px"
+                android:text="Toy"/>
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5px"
+            android:layout_gravity="end"
+
+            android:id="@+id/btnnext"
+            android:background="@color/colorAccent"
+            android:text="Next Step"/>
+    </LinearLayout>
+</LinearLayout>

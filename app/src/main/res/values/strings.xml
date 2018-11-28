@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GiftWish</string>
+    <string name="facebooks_app_id">1401035736697351</string>
+    <string name="facebooks_login_protocol_scheme">fb1401035736697351</string>
+</resources>
